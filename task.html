@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sankofa+Display&display=swap');
+
+
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .cta {
+            background-color: brown;
+            border-radius: 6px;
+        }
+
+        .left {
+            width: 50%;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            width: 50%;
+            height: 600px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+
+        }
+
+        .logoimg {
+            width: 70px;
+        }
+
+        .content {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 360px;
+            font-size: larger;
+            justify-content: space-around;
+        }
+        .btn{
+            display: flex;
+            padding: 20px;
+
+            
+        }
+        
+
+        .btn1 {
+            background-color: brown;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .btn2 {
+            background-color: black;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            width: 100px;
+        }
+
+        .btn3 {
+            background-color: brown;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            height: 80px;
+            text-align: center;
+        }
+
+        .btn4 {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            width: 150px;
+            height: 80px;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .h4 {
+           color: brown;
+        }
+        .h3 {
+            color: gray;
+        }
+        .right1 {
+            display: flex;
+            height: 600px;
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .right2{
+            margin-top: 50px;
+        }
+        .container1{
+            display: flex;
+        }
+        .box2{
+            border: solid 2px black;
+            height: auto;
+            width: 300px;
+        }
+        .img4{
+            width: 300px;
+            height: 200px;
+        }
+        .btnbox{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: red;
+            color: white;
+            border: none;
+            justify-content: space-between;
+            align-items: end;
+            margin-left: 200px;
+
+        }
+        .img1{
+            height: 600px;
+            width: 400px;
+            border: 10px solid white;
+            border-radius: 20px;
+           
+        }
+        .img2{
+            height: 300px;
+            width: 300px;
+            border: 10px solid white;
+            border-radius: 20px;
+   
+
+        }
+        .img3{
+            height: 300px;
+            width: 300px;
+            border: 10px solid white;
+            border-radius: 20px;
+            
+
+        }
+
+        .container3{
+        
+            display: flex;
+            justify-content: center;
+
+        }
+        .box3{
+            height:auto ;
+            width: 400px;
+            border: solid black 1px;
+            border-radius: 10px;
+            margin: 20px;
+            background-color: white;
+            padding: 10px;
+        
+        }
+        .image3{
+            width: 400px;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .content1{
+            margin-top: 50px;
+            margin-left: 130px;
+
+        }
+        .container4{
+            border: 30px solid brown;
+            display: flex;
+            height: 800px;
+            margin: 100px 50px 100px 50px;
+            border-radius: 15px;
+            
+            
+
+        }
+        .image4{
+            width: 900px;
+            height: 800px;
+        }
+        
+        .inputfield{
+            width:600px ;
+            height: 50px;
+
+        }
+        .inputfield1{
+            width:600px ;
+            height: 80px;
+
+        }
+    
+        .container6{
+            padding: 5px;
+            border: 30px solid brown;
+            border-radius: 10px;
+            width: 50%;
+            
+            
+    
+
+        }
+        .btn6{
+            width: 100px;
+            height: 40px;
+            border: none;
+            color: white;
+            background-color: black;
+        }
+        .box3:hover{
+            transform: scaleY(1.1);
+            height: 100%;
+
+         }
+         .box3:hover .image3{
+            height: 100%;
+         } 
+         .box3:hover .btnbox{
+            position: relative;
+            bottom: 350px;
+            left: 130px;
+            padding: 22px 27px;
+            cursor: pointer;
+         }  
+         @media (max-width: 768px) {
+            .first p {
+                width: 80%;
+            }
+        
+            .grid {
+                grid-template-columns: 1fr !important;
+            }
+        }   
+              
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://freepngimg.com/thumb/mustang/23069-7-mustang-logo-photos.png" alt="" class="logoimg">
+            <h2>MUSTANG</h2>
+        </div>
+
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERIVCES</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="" class="cta">CALL NOW</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="left">
+
+            <div class="content">
+                <h4 class="h4">Ford Mustang GT, Perfect Muscle</h4>
+
+                <h1>Aggressive Muscle Car best fit for Car Lovers</h1>
+
+                <p>The Ford Mustang is a series of American automobiles manufactured by Ford. In continuous production
+                    since 1964, the Mustang is currently the longest-produced Ford car nameplate. Currently in its
+                    seventh generation, it is the fifth-best selling Ford car nameplate.
+                </p>
+
+                <div class="btn">
+                    <button class="btn1">About Us</button> 
+                    <button class="btn2">Get Started</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+            <img src="https://wallpapercave.com/wp/wp6138554.jpg" alt="">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="left">
+            <div class="content">
+
+                <h4 class="h4">WHO WE ARE</h4>
+
+                <h1>ABOUT US </h1>
+                <h3 class="h3">"Get To Know Our Mission & Terms"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit laudantium sunt voluptas corporis
+                    dolorum! Totam dolorum ullam, non sequi et fuga deleniti tempora perspiciatis aliquam eius mollitia?
+                    Quasi, ab sint?</p>
+                <div class="btn">
+                    <button class="btn3">200+ States Reached</button> <br>
+                    <button class="btn4">2000+ Happy Customers</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right1">
+            <img class="img1" src="https://wallpapercave.com/wp/wp6138554.jpg" alt="">
+        </div>
+        <div class="right2">
+            <img class="img2" src="https://cdn.motor1.com/images/mgl/RqJ7V9/s1/lamborghini-autentica.jpg" alt="">
+            <img class="img3" src="https://stat.overdrive.in/wp-content/odgallery/2016/05/30631__3.JPG" alt="">
+        </div>
+    
+
+    </div>
+     
+    <div class="content1">
+            <h4 class="h4">OUR SERVICES</h4>
+            <h1>Our Best Services</h1>
+        </div>
+
+        <div class="container3">
+            <div class="box3">
+                <img class="image3" src="https://cdn.motor1.com/images/mgl/RqJ7V9/s1/lamborghini-autentica.jpg" alt="">
+                <h1>lamborghini</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vero laborum? Praesentium itaque aspernatur </p> <br>
+                Good Service
+                <button class="btnbox"><b> > </b></button> 
+               
+
+            </div>
+            <div class="box3">
+                <img class="image3" src="https://cdn.motor1.com/images/mgl/RqJ7V9/s1/lamborghini-autentica.jpg" alt="">
+                <h1>lamborghini</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vero laborum? Praesentium itaque aspernatur </p> <br>
+                Good Service
+                <button class="btnbox"><b> > </b></button>
+
+            </div>
+            <div class="box3">
+                <img class="image3" src="https://cdn.motor1.com/images/mgl/RqJ7V9/s1/lamborghini-autentica.jpg" alt="">
+                <h1>lamborghini</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vero laborum? Praesentium itaque aspernatur </p> <br>
+                Good Service
+                <button class="btnbox"><b> > </b></button>
+
+            </div>
+            <div class="box3">
+                <img class="image3" src="https://cdn.motor1.com/images/mgl/RqJ7V9/s1/lamborghini-autentica.jpg" alt="">
+                <h1>lamborghini</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vero laborum? Praesentium itaque aspernatur </p> <br>
+                Good Service
+                <button class="btnbox"><b> > </b></button>
+
+            </div>
+
+        </div> 
+
+
+        <div class="container4">
+            <div class="container5">
+                <img class="image4" src="https://www.projectmanager.com/wp-content/uploads/2020/03/200303_Blog_Feature_MSP.jpg" alt="">
+            </div>
+        
+
+
+            <div class="container6">
+                <h1>Contact Us</h1> 
+                <input type="text" id="user" class="inputfield" placeholder="yourname" > <br>
+              <br>  <input type="text" id="user" class="inputfield" placeholder="your email" > <br><br>
+                <input type="text" id="user" class="inputfield1" placeholder="your massage" > <br> <br>
+                <button class="btn6">Submit</button>
+            
+
+            </div>
+                
+        </div>
+        
+</body>
+
+</html>
